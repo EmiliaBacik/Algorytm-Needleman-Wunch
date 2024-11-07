@@ -24,3 +24,37 @@ Można również zastosować algorytm z własnymi preferencjami parametrów, nal
 nw.py sequqnces.fa -s 1 -2 -2
 
 Oznaczają one kolejno przypisanie do dopasowanie(match_score) = 1,  niedopasowanie(mismatch_score) = -2, przerwa(gap_score) = -2.
+
+## Przykładowe wywołanie
+W pliku sequqnces.fa znajdują się dwie następujące sekwencje:
+
+>AGCTAGCATG
+>ACGGTAGCATT
+
+Wywołujemy algorytm z podanymi parametrami:
+
+nw.py sequqnces.fa -s 1 -2 -1
+
+Otrzymujemy na wyjściu informacje o danych wejściowych, czy na pewno zostały dobrze wprowadzone:
+
+Match_score = 1
+
+Mismatch_score = -2
+
+Gap_score = -1
+
+Sequence 1: AGCTAGCATG
+Sequence 2: ACGGTAGCATT
+
+Oraz wynik w formie globalnego dopasowania, gdzie "-" oznacza przerwę:
+
+[ A - - G C T A G C A - T G ]
+[ A C G G - T A G C A T T - ]
+
+Score: 3
+
+Algorym wyszukuje jedno z możliwych optymalnych rozwiązań, o czym informuje użytkownika stosownym komunikatem.
+
+
+
+
