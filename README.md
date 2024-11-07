@@ -28,8 +28,9 @@ Oznaczają one kolejno przypisanie do dopasowanie(match_score) = 1,  niedopasowa
 ## Przykładowe wywołanie
 W pliku sequqnces.fa znajdują się dwie następujące sekwencje:
 
->AGCTAGCATG
->ACGGTAGCATT
+">AGCTAGCATG"
+
+ ">ACGGTAGCATT"
 
 Wywołujemy algorytm z podanymi parametrami:
 
@@ -44,11 +45,13 @@ Mismatch_score = -2
 Gap_score = -1
 
 Sequence 1: AGCTAGCATG
+
 Sequence 2: ACGGTAGCATT
 
 Oraz wynik w formie globalnego dopasowania, gdzie "-" oznacza przerwę:
 
 [ A - - G C T A G C A - T G ]
+
 [ A C G G - T A G C A T T - ]
 
 Score: 3
