@@ -16,12 +16,12 @@ Wypełnianie macierzy - macierz jest wypełniana na podstawie funkcji:
 ## Sposób użycia
 Należy podać na wejściu plik w formacie FASTA, w którym bedą znajdować się dwie sekwencje nukleotydowe lub aminokwasowe. Przykładowe wywołanie z plikiem sequences.fa: 
 
-python nw.py sequqnces.fa
+python nw.py sequences.fa
 
 W tym przypadku zostaną użyte domyślne wartości parametrów odpowiedzialnych za punktację: dopasowanie(match_score) = 1, niedopasowanie(mismatch_score) = -1, przerwa(gap_score) = -1.
 Można również zastosować algorytm z własnymi preferencjami parametrów, należy wtedy podać je na wejściu przy pomocy przełącznika "--score", skrótowo zapisywanego jako "-s", przykład:
 
-nw.py sequqnces.fa -s 1 -2 -2
+nw.py sequences.fa -s 1 -2 -2
 
 Oznaczają one kolejno przypisanie do dopasowanie(match_score) = 1,  niedopasowanie(mismatch_score) = -2, przerwa(gap_score) = -2.
 
@@ -36,7 +36,7 @@ W pliku sequences.fa znajdują się dwie następujące sekwencje:
 
 Wywołujemy algorytm z podanymi parametrami:
 
-python nw.py sequqnces.fa -s 1 -2 -1
+python nw.py sequences.fa -s 1 -2 -1
 
 Otrzymujemy na wyjściu informacje o danych wejściowych, czy na pewno zostały dobrze wprowadzone:
 
