@@ -1,4 +1,4 @@
-# Algorytm-Needlemana-Wuncha
+# Algorytm-Needlemana-Wunscha
 Implementacja algorytmu Needlemana-Wuncha na potrzeby laboratoriów z bioinformatyki strukturalnej.
 Został zaprojektowany w celu znalezienia optymalnego globalnego dopasowania dwóch sekwencji DNA, RNA lub aminokwasowych. Działa poprzez budowanie macierzy dopasowań (programowanie dynamiczne), w której każda komórka odpowiada za ocenę dopasowania dwóch pozycji w sekwencjach. Algorytm ocenia trzy możliwe operacje dla każdej pary pozycji w sekwencjach: dopasowanie, niedopasowanie bądź luka.
 
@@ -21,7 +21,7 @@ python nw.py sequences.fa
 W tym przypadku zostaną użyte domyślne wartości parametrów odpowiedzialnych za punktację: dopasowanie(match_score) = 1, niedopasowanie(mismatch_score) = -1, przerwa(gap_score) = -1.
 Można również zastosować algorytm z własnymi preferencjami parametrów, należy wtedy podać je na wejściu przy pomocy przełącznika "--scores", skrótowo zapisywanego jako "-s", przykład:
 
-nw.py sequences.fa -s 1 -2 -2
+python nw.py sequences.fa -s 1 -2 -2
 
 Oznaczają one kolejno przypisanie do dopasowanie(match_score) = 1,  niedopasowanie(mismatch_score) = -2, przerwa(gap_score) = -2.
 
