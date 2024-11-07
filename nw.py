@@ -1,6 +1,6 @@
 import sys
 
-help = "This is an program blebleble"
+help = "To jest program służący do dopasowywania globalnego dwóch sekwencji. Podaj plik w formacie FASTA i opcjonalnie parametry punktacji dopasowania."
 
 if len(sys.argv) >= 2:
   plik = sys.argv[1]
@@ -125,3 +125,11 @@ print(result1)
 print(result2)
 print("Score: ", score)
 print("Keep in mind that there may be more than one result with the same score. Here is an example of one with the highest score.")
+
+with open("alignment_result.txt", "w") as output_file:
+    output_file.write("Wynik dopasowania:\n")
+    output_file.write("".join(result1) + "\n")
+    output_file.write("".join(result2) + "\n")
+    output_file.write("Punkty: " + str(score) + "\n")
+
+print("\nThe result has been saved to the 'alignment_result.txt' file.")
