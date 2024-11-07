@@ -1,6 +1,6 @@
 import sys
 
-help = "To jest program służący do dopasowywania globalnego dwóch sekwencji. Podaj plik w formacie FASTA i opcjonalnie parametry punktacji dopasowania za pomocą przełącznika --scores lub -s. Dowiedz się więcej w pliku readme.md ."
+help = "To jest program służący do dopasowywania globalnego dwóch sekwencji. \nPodaj plik w formacie FASTA i opcjonalnie parametry punktacji dopasowania za pomocą przełącznika --scores lub -s. \nDowiedz się więcej w pliku readme.md ."
 
 if len(sys.argv) >= 2:
   plik = sys.argv[1]
