@@ -19,7 +19,7 @@ Należy podać na wejściu plik w formacie FASTA, w którym bedą znajdować si�
 python nw.py sequences.fa
 
 W tym przypadku zostaną użyte domyślne wartości parametrów odpowiedzialnych za punktację: dopasowanie(match_score) = 1, niedopasowanie(mismatch_score) = -1, przerwa(gap_score) = -1.
-Można również zastosować algorytm z własnymi preferencjami parametrów, należy wtedy podać je na wejściu przy pomocy przełącznika "--score", skrótowo zapisywanego jako "-s", przykład:
+Można również zastosować algorytm z własnymi preferencjami parametrów, należy wtedy podać je na wejściu przy pomocy przełącznika "--scores", skrótowo zapisywanego jako "-s", przykład:
 
 nw.py sequences.fa -s 1 -2 -2
 
